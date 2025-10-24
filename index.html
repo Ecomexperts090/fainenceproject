@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecom Experts - Safalta Kit</title>
+    <title>Ecom Experts - Launch Offer</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -12,343 +12,109 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7f9fb;
         }
-        .cta-button {
-            transition: all 0.3s ease;
+
+        /* Custom Button Animation */
+        .cta-button-animated {
+            /* For smooth transition */
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            /* Initial shadow */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            /* To give the button a slight lift */
+            transform: translateY(0);
         }
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+        .cta-button-animated:hover {
+            /* Scale up by 5% on hover */
+            transform: scale(1.05) translateY(-2px); 
+            /* Deep and attractive shadow */
+            box-shadow: 0 10px 30px rgba(45, 108, 253, 0.7); /* Blue glowing shadow */
+            /* Slightly brighten the color */
+            filter: brightness(1.1);
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #1f2937 0%, #030712 100%);
-        }
-        .product-grid-item {
-            aspect-ratio: 1/1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #e5e7eb;
-        }
-        .product-placeholder-icon {
-            font-size: 2.5rem;
-            color: #4b5563;
         }
     </style>
 </head>
 <body class="text-gray-800">
 
-    <!-- Header (Simple Branding) -->
-    <header class="bg-white shadow-sm p-4 sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold text-blue-600">Ecom Experts</h1>
-            <p class="text-sm text-gray-500 hidden sm:block">Apni Safalta Ki Journey Shuru Karein!</p>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="gradient-bg text-white py-12 md:py-20 text-center">
+    <!-- Hero Section: Main Attraction and Offer -->
+    <section class="gradient-bg text-white py-16 md:py-24 text-center min-h-screen flex items-center justify-center">
         <div class="max-w-4xl mx-auto px-4">
-            <!-- Top Banner -->
-            <div class="bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full inline-block mb-6 shadow-lg transform rotate-[-2deg]">
-                <span class="text-xl md:text-2xl">⚡️ All Products Discounted this Week! ⏰</span>
+            
+            <!-- Company Name -->
+            <h1 class="text-3xl font-extrabold text-blue-400 mb-6">Ecom Experts</h1>
+
+            <!-- Offer Banner -->
+            <div class="bg-yellow-500 text-gray-900 font-extrabold py-2 px-6 rounded-full inline-block mb-6 shadow-xl transform rotate-[-2deg]">
+                <span class="text-xl md:text-2xl">⚡️ Launch Offer – Only for Today! ⏰</span>
             </div>
 
             <!-- Main Headline -->
-            <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
-                Launch Offer – Ek Damdaar 70% OFF, Sirf Aaj Ke Liye!
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Boost Your Productivity 10X with the Success Kit!
             </h2>
 
             <!-- Sub Headline -->
-            <p class="text-xl sm:text-2xl mb-8 font-light">
-                Apne Finances ko Control Karein, Habits Track Karein, Productivity Badhayein, Goals Achieve Karein, aur har zindgi ke pahlu mein **Highly Productive Banein**
-            </p>
-            <p class="text-lg sm:text-xl italic mb-10 text-yellow-300">
-                Financial, Nutritional, Professional, ya Spiritual – sabhi mein Safalta paayein hamare aasan Productivity Toolkit ke saath.
+            <p class="text-xl sm:text-2xl mb-12 font-light text-gray-300">
+                Goals, Habits, Finances, and Time Management - Everything in One Place.
             </p>
 
-            <!-- Key Benefits -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
-                <div class="p-3 bg-gray-800 bg-opacity-50 rounded-lg shadow-inner">
-                    <div class="product-placeholder-icon text-blue-400">✅</div>
-                    <p class="text-sm font-semibold mt-1">Instant Access & Ready to Go</p>
-                </div>
-                <div class="p-3 bg-gray-800 bg-opacity-50 rounded-lg shadow-inner">
-                    <div class="product-placeholder-icon text-blue-400">📈</div>
-                    <p class="text-sm font-semibold mt-1">Track Daily Progress</p>
-                </div>
-                <div class="p-3 bg-gray-800 bg-opacity-50 rounded-lg shadow-inner">
-                    <div class="product-placeholder-icon text-blue-400">🎯</div>
-                    <p class="text-sm font-semibold mt-1">Achieve Apne Goals</p>
-                </div>
-                <div class="p-3 bg-gray-800 bg-opacity-50 rounded-lg shadow-inner">
-                    <div class="product-placeholder-icon text-blue-400">🚀</div>
-                    <p class="text-sm font-semibold mt-1">Banein 10X Productive</p>
-                </div>
-            </div>
+            <!-- Pricing and CTA Block -->
+            <div class="p-6 sm:p-8 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 inline-block">
+                
+                <p class="text-lg font-semibold line-through text-red-400 mb-2">Regular Price: ₹699</p>
+                
+                <p class="text-5xl md:text-6xl font-extrabold text-yellow-500 mb-6">
+                    Special Offer: <span class="text-white">₹199</span>
+                </p>
 
-            <!-- CTA Button -->
-            <a href="#" class="cta-button bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-4 px-12 text-3xl rounded-xl uppercase inline-block transition duration-300">
-                Abhi Kharidein @ ₹199 only
-            </a>
-            <p class="mt-4 text-sm text-yellow-500 font-semibold">📢 Note: Price Jald Hi Badhkar ₹299 Ho Jaega (Offer Sirf Aaj Ke Liye Valid Hai!)</p>
-        </div>
-    </section>
-
-    <!-- Value Proposition Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-gray-900">Hamara Productivity Toolkit Aapki Zindagi Mein Value Kaise Add Kar Sakta Hai</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
-                <!-- Benefit 1 -->
-                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-3xl text-blue-500 mb-3">⏱️</div>
-                    <h4 class="text-xl font-semibold mb-2">Ready to Use Tracker se Samay Bachayein</h4>
-                    <p class="text-gray-600 text-sm">Aapko goals achieve karne mein madad karta hai. Sheet banane mein time waste na karein.</p>
-                </div>
-                <!-- Benefit 2 -->
-                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-3xl text-blue-500 mb-3">👶</div>
-                    <h4 class="text-xl font-semibold mb-2">User Friendly aur Beginner Friendly</h4>
-                    <p class="text-gray-600 text-sm">Koi bhi use kar sakta hai! Iska design itna aasan hai ki naye log bhi ise turant samajh sakte hain.</p>
-                </div>
-                <!-- Benefit 3 -->
-                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-3xl text-blue-500 mb-3">⚡</div>
-                    <h4 class="text-xl font-semibold mb-2">Productivity aur Efficiency Turant Badhayein</h4>
-                    <p class="text-gray-600 text-sm">Ek structured system se aapki efficiency instantly badh jaegi. Turant behtar results dekhein.</p>
-                </div>
-                <!-- Benefit 4 -->
-                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-3xl text-blue-500 mb-3">🔄</div>
-                    <h4 class="text-xl font-semibold mb-2">Habits Track Karne Ke Liye Versatile Templates</h4>
-                    <p class="text-gray-600 text-sm">Multiple habits aur routine ko track karne ke liye vibhinn prakar ke templates shamil hain.</p>
-                </div>
-                <!-- Benefit 5 -->
-                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-3xl text-blue-500 mb-3">⚙️</div>
-                    <h4 class="text-xl font-semibold mb-2">Effective Habit Management System</h4>
-                    <p class="text-gray-600 text-sm">Kai habits ko ek saath manage karne ke liye ek structured aur asardar pranaali.</p>
-                </div>
-                <!-- Benefit 6 -->
-                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-3xl text-blue-500 mb-3">💯</div>
-                    <h4 class="text-xl font-semibold mb-2">Predefined Formulas ke Saath Error Free</h4>
-                    <p class="text-gray-600 text-sm">Sabhi formulas pehle se hi set hain, jisse calculations mein galti ki koi gunjaish nahi hai.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Target Audience Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-gray-900">Yeh Productivity Toolkit Bundle Kiske Liye Hai?</h3>
-            
-            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
-                <!-- Audience 1 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">🧑‍🏫</div>
-                    <p class="font-semibold">Coaches</p>
-                </div>
-                <!-- Audience 2 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">💼</div>
-                    <p class="font-semibold">Entrepreneurs</p>
-                </div>
-                <!-- Audience 3 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">💻</div>
-                    <p class="font-semibold">Freelancers</p>
-                </div>
-                <!-- Audience 4 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">📢</div>
-                    <p class="font-semibold">Marketers</p>
-                </div>
-                <!-- Audience 5 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">🏢</div>
-                    <p class="font-semibold">Agency Owner</p>
-                </div>
-                <!-- Audience 6 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">🛠️</div>
-                    <p class="font-semibold">Service Providers</p>
-                </div>
-                <!-- Audience 7 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">👨‍💻</div>
-                    <p class="font-semibold">Project Manager</p>
-                </div>
-                <!-- Audience 8 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">👩‍🏫</div>
-                    <p class="font-semibold">Teachers</p>
-                </div>
-                <!-- Audience 9 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">💰</div>
-                    <p class="font-semibold">Self-Employed</p>
-                </div>
-                <!-- Audience 10 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">🤝</div>
-                    <p class="font-semibold">Consultant</p>
-                </div>
-                <!-- Audience 11 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">⚖️</div>
-                    <p class="font-semibold">Lawyers</p>
-                </div>
-                <!-- Audience 12 -->
-                <div class="bg-white p-4 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <div class="text-4xl mb-2">👨‍⚕️</div>
-                    <p class="font-semibold">Doctors</p>
-                </div>
-            </div>
-            <p class="mt-8 text-lg italic text-gray-600">
-                Aur koi bhi jo apna samay manage karna chahta hai, apni Habits track karna chahta hai, aur Productivity badhana chahta hai.
-            </p>
-        </div>
-    </section>
-    
-    <!-- Pricing Summary & Final CTA -->
-    <section class="py-16 md:py-24 gradient-bg text-white text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <h3 class="text-4xl font-extrabold mb-10 text-yellow-500">Aapka Order Aaj!!!</h3>
-
-            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center mb-10">
-                <div class="p-4 rounded-lg bg-gray-800 bg-opacity-70">
-                    <p class="text-sm uppercase text-gray-400">Total Value:</p>
-                    <p class="text-3xl font-bold line-through text-red-400">₹24,317​</p>
-                </div>
-                <div class="p-4 rounded-lg bg-gray-800 bg-opacity-70">
-                    <p class="text-sm uppercase text-gray-400">Normal Price:</p>
-                    <p class="text-3xl font-bold line-through text-red-400">₹4,999</p>
-                </div>
-                <div class="p-4 rounded-lg bg-gray-800 bg-opacity-70">
-                    <p class="text-sm uppercase text-gray-400">Regular Price:</p>
-                    <p class="text-3xl font-bold line-through text-red-400">₹1,399</p>
-                </div>
-                <div class="p-4 rounded-lg bg-blue-600">
-                    <p class="text-sm uppercase text-white">Get It All Right Now</p>
-                    <p class="text-3xl md:text-4xl font-extrabold">At Offer Price of 50% Off <br> @ ₹199</p>
-                </div>
-            </div>
-
-            <!-- Final CTA Button -->
-            <a href="#" class="cta-button bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-extrabold py-4 px-12 text-3xl rounded-xl uppercase inline-block transition duration-300">
-                Abhi Kharidein @ ₹199 only
-            </a>
-            <p class="mt-4 text-sm text-yellow-300 font-semibold">📢 Note: Price Jald Hi Badhkar ₹299 Ho Jaega (Offer Sirf Aaj Ke Liye Valid Hai!)</p>
-        </div>
-    </section>
-
-    <!-- Why Ecom Experts Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Ecom Experts Ko Kya Khas Banata Hai!</h3>
-            <p class="text-lg text-gray-600 mb-12">Pata lagayein ki aapko dusre Personal Development Tracker tools ki bajaye Ecom Experts ko kyu chunna chahiye.</p>
-            
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-                <!-- Image Placeholder for 'What Makes Us Special' -->
-                <div class="w-full md:w-1/2 bg-gray-100 p-8 rounded-xl shadow-lg border-2 border-blue-200">
-                    <div class="h-64 flex items-center justify-center text-gray-500 text-lg font-medium">
-                                            </div>
-                </div>
-                <!-- Text/Features -->
-                <div class="w-full md:w-1/2 text-left space-y-4">
-                    <div class="p-4 bg-blue-50 rounded-lg">
-                        <p class="font-semibold text-blue-800">100% Customization:</p>
-                        <p class="text-sm text-gray-600">Templates ko apne brand aur zarooraton ke anusaar badlein.</p>
-                    </div>
-                    <div class="p-4 bg-blue-50 rounded-lg">
-                        <p class="font-semibold text-blue-800">Advanced Formulas:</p>
-                        <p class="text-sm text-gray-600">Hamare templates mein advanced, error-free formulas pehle se hi daale gaye hain.</p>
-                    </div>
-                    <div class="p-4 bg-blue-50 rounded-lg">
-                        <p class="font-semibold text-blue-800">Dual Format (Excel & Google Sheets):</p>
-                        <p class="text-sm text-gray-600">Offline aur Online, dono tarah se kaam karne ki suvidha.</p>
-                    </div>
-                    <div class="p-4 bg-blue-50 rounded-lg">
-                        <p class="font-semibold text-blue-800">Dedicated Support:</p>
-                        <p class="text-sm text-gray-600">Har sawal ka jawab dene ke liye hamari support team hamesha maujood hai.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Suniye Hamare Customers Kya Kehte Hain!</h3>
-            <p class="text-2xl font-extrabold text-blue-600 mb-12">Customers Ne Ise 4.8/5 Rate Kiya Hai ⭐</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
-                    <p class="text-gray-600 mb-4 italic">"Kabhi-kabhi 'kam hi zyada hai' aur yahi mujhe is Toolkit mein pasand hai. Yeh ek seedha, no-nonsense tool hai jo kaam karta hai. Clean design aur aasan layout meri habits aur goals ko track karna aasan bana deta hai!"</p>
-                    <div class="flex items-center justify-center pt-4 border-t mt-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-3 text-lg font-bold text-gray-700">RS</div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Roshan Soni</p>
-                            <p class="text-sm text-blue-600">Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
-                    <p class="text-gray-600 mb-4 italic">"Aakhirkar, ek personal development tool jo meri zaroorat ko samajhta hai! Yeh Toolkit mujhe organized aur accountable rakhta hai. Mujhe customizable features pasand hain. Yeh mere success ke liye ek personal assistant jaisa hai. Five stars!"</p>
-                    <div class="flex items-center justify-center pt-4 border-t mt-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-3 text-lg font-bold text-gray-700">SN</div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Shahbaz Nadeem</p>
-                            <p class="text-sm text-blue-600">Consultant</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
-                    <p class="text-gray-600 mb-4 italic">"Goals set aur achieve karne wale vyakti ke roop mein, Productivity Toolkit mere liye zaruri hai. Yeh meri personal growth journey par focused rehne mein madad karta hai. Jo koi bhi apni life mein positive changes karna chahta hai, usey ise zaroor lena chahiye!"</p>
-                    <div class="flex items-center justify-center pt-4 border-t mt-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-3 text-lg font-bold text-gray-700">KS</div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Komal Sharma</p>
-                            <p class="text-sm text-blue-600">Teacher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Final CTA below testimonials -->
-            <div class="mt-12">
-                <a href="#" class="cta-button bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-3 px-10 text-2xl rounded-xl uppercase inline-block transition duration-300">
-                    Abhi Kharidein @ ₹199 only
+                <!-- CTA Button (Animation Applied Here) -->
+                <a href="#" 
+                   class="cta-button-animated bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-4 px-12 text-2xl md:text-3xl rounded-xl uppercase inline-block w-full sm:w-auto shadow-2xl">
+                    Buy Now @ ₹199 only
                 </a>
+                
+                <p class="mt-4 text-sm text-yellow-300 font-semibold">
+                    📢 Note: The Price will soon increase to ₹299 (Offer is Valid Only for Today!)
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Simpler Features Section -->
+    <section class="py-16 bg-white text-center">
+        <h3 class="text-3xl font-bold mb-10 text-gray-900">What Will You Get in This Toolkit?</h3>
+        
+        <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <!-- Feature 1: Finance -->
+            <div class="p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition">
+                <div class="text-4xl mb-3">💰</div>
+                <h4 class="text-xl font-semibold">Dynamic Finance Tracker</h4>
+                <p class="text-gray-600 text-sm mt-1">Keep track of your expenses and income with pre-built formulas.</p>
+            </div>
+            
+            <!-- Feature 2: Habits (New) -->
+            <div class="p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition">
+                <div class="text-4xl mb-3">✅</div>
+                <h4 class="text-xl font-semibold">Comprehensive Habit Tracker</h4>
+                <p class="text-gray-600 text-sm mt-1">Monitor your daily progress and build powerful, consistent habits.</p>
+            </div>
+
+            <!-- Feature 3: Goals (New) -->
+            <div class="p-6 rounded-xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition">
+                <div class="text-4xl mb-3">🎯</div>
+                <h4 class="text-xl font-semibold">Strategic Goal Planner</h4>
+                <p class="text-gray-600 text-sm mt-1">Break down big goals into manageable steps and achieve success faster.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-6">
-                <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Terms & Conditions</a>
-                <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Contact Us</a>
-                <a href="#" class="text-gray-400 hover:text-blue-400 text-sm">Cancellation & Refund Policy</a>
-            </div>
-            
-            <p class="text-xl font-extrabold text-blue-400 mb-4">Ecom Experts</p>
-            <p class="text-xs text-gray-500 mb-4">Copyright© All Rights Reserved</p>
-            
-            <p class="text-xs text-gray-600 mt-6">
-                Disclaimer: This site is not part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
-            </p>
-        </div>
+    <!-- Footer for simple design -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p class="text-xs text-gray-400">© 2025 Ecom Experts. All rights reserved.</p>
     </footer>
 
 </body>
